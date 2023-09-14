@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import "./Login.css";
+import "./AdminLogin.css";
 
-export default function LogIn({ setLoggedIn, setUser }) {
+export default function AdminLogIn({ setLoggedIn, setUser }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -55,8 +55,8 @@ export default function LogIn({ setLoggedIn, setUser }) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <Link className='admin-link' to='/adminLogin'>
-          Are you an Admin?
+        <Link className='login-link' to='/login'>
+          Do you want to sign in without Admin?
         </Link>
         <button className='loginButton'>Login</button>
       </form>

@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './Homepage';
+import Login from './Login';
+import AdminLogIn from './AdminLogin';
 
 function MainDemo() {
   const isLoggedIn = true; // Replace with your authentication logic
@@ -10,6 +12,8 @@ function MainDemo() {
       <Routes>
         {/* Guest Routes */}
         <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/adminLogin" element={<AdminLogIn />} />
       </Routes>
     </div>
   );

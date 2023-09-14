@@ -38,11 +38,11 @@ export default function Navigation({ loggedIn, setUser, setLoggedIn }) {
           <Link className="navigation-links" to="/login">
             Login
           </Link>
-          <Link className="navigation-links" to="/posts">
-            Posts
+          <Link className="navigation-links" to="/signup">
+            Sign Up
           </Link>
-          <Link className="navigation-links" to="/search">
-            Search
+          <Link className="navigation-links" to="/reviews">
+            Reviews
           </Link>
         </>
       )}

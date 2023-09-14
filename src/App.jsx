@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import MainDemo from './components/MainDemo';
-import './App.css'
-//<Navigation loggedIn={''} setLoggedIn={''} setUser={''} />
+import Navigation from './components/navbar';
+import './App.css';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div className="appStyle">
+      <Navigation loggedIn={loggedIn} setLoggedIn={setLoggedIn} setUser={setUser} />
       <MainDemo isLoading={isLoading} user={user} setUser={setUser} loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
     </div>
   )
