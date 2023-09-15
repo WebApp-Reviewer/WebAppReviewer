@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import "./Login.css";
+import "./login.css";
 
 export default function LogIn({ setLoggedIn, setUser }) {
   const [username, setUsername] = useState('');
@@ -55,8 +55,8 @@ export default function LogIn({ setLoggedIn, setUser }) {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <Link className='admin-link' to='/adminLogin'>
-          Are you an Admin?
+        <Link className='register' to='/register'>
+          Don't have an account, make it here.
         </Link>
         <button className='loginButton'>Login</button>
       </form>
